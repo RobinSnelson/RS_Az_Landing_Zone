@@ -1,0 +1,5 @@
+project_name     = <a four letter acronym to just make the whole project unique>
+default_location = <preferred location>
+location_prefix  = <prefix for the location eg we for West Europe>
+dc_count         = <number of DC's required I put 2, a dc should never be lonely>
+admin_password   = <a suitable admin password>
