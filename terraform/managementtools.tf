@@ -1,7 +1,7 @@
 resource "azurerm_network_security_group" "az_mgmt_nsg" {
   name                = "${var.project_name}-${var.location_prefix}-net-nsg-mgmt"
-  location            = azurerm_resource_group.main_rg.location
-  resource_group_name = azurerm_resource_group.main_rg.name
+  location            = azurerm_resource_group.net_rg.location
+  resource_group_name = azurerm_resource_group.net_rg.name
 
   security_rule {
     name                       = "ad_ports"

@@ -15,5 +15,5 @@ variable "dc_count" {
 }
 
 variable "admin_password" {
-    type = string
+  type = string
 }

@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "main_rg" {
+resource "azurerm_resource_group" "net_rg" {
   name     = "${var.project_name}-${var.location_prefix}-net-rg"
   location = var.default_location
 }
