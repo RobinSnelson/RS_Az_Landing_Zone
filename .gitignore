@@ -1,5 +1,6 @@
 # Local .terraform directories
 **/.terraform/*
+*/Arm_Templates/*
 
 # .tfstate files
 *.tfstate
