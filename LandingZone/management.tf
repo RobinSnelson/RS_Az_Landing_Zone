@@ -28,7 +28,7 @@ resource "azurerm_private_endpoint" "Automation_Endpoint" {
 }
 
 resource "azurerm_role_assignment" "hub_rsv_roleassign" {
-  principal_id       = azurerm_recovery_services_vault.hub_recovery_services_vault.identity.principal_id
+  principal_id       = azurerm_recovery_services_vault.hub_recovery_services_vault.identity[0].principal_id
   scope              = data.azurerm_subscription.current.id
   role_definition_id = "${data.azurerm_subscription.current.id}${data.azurerm_role_definition.contributor.id}"
 
