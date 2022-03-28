@@ -77,4 +77,7 @@ resource "azurerm_subnet" "mgmt_subnet" {
     "10.0.240.32/27"
   ]
 
+  enforce_private_link_endpoint_network_policies = true
+  enforce_private_link_service_network_policies  = true
+
 }
